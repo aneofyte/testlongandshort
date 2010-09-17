@@ -14,13 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+import os
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
+from google.appengine.ext.webapp import template
 
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        self.response.out.write('<html><head><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><title></tile></head><body>Hey</body></html>')
+        template_values = {
+                    'title': "Affiliate Custom Title",
+                    'url': "url",
+                    'url_linktext': "url_linktext",
+        }
+        
+        layoutPath = os.path.join(os.path.dirname(__file__), 'templates', 'layout.html')
+        self.response.out.write(template.render(layoutPath, template_values))
+
 
 
 def main():

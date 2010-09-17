@@ -1,0 +1,59 @@
+
+body {
+    background: white;
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left:10%;
+    max-width:1075px;
+    min-width:80%;
+    overflow-x:hidden;
+}
+
+#layoutContainer {
+    
+    height: auto !important;
+    margin: 0px auto;
+    min-height: 800px;
+    
+    clear: both;
+    
+}
+
+
+#logoContainer {
+    
+    float:right;
+    height: 494px;
+    width: 790px;
+   
+}
+
+#navContainer {
+    
+    float:left;
+}
+
+
+#footer {
+    border:red 2px solid;
+    clear:both;
+    margin-left:300px;
+    
+}
+
+#footer div {
+    border:blue 2px solid;
+    width:20%;
+    float:left;
+}
+
+#footer:after {
+clear:both;
+content:".";
+display:block;
+font-size:0;
+height:0;
+visibility:hidden;
+}
