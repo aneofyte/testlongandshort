@@ -20,7 +20,7 @@ from google.appengine.ext.webapp import util
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        self.response.out.write('Hello Stephen and Lance!')
+        self.response.out.write('<html><head><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><title></tile></head><body>Hey</body></html>')
 
 
 def main():
